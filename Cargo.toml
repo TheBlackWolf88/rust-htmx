@@ -7,6 +7,10 @@ edition = "2021"
 
 [dependencies]
 axum = "0.6.20"
+axum-macros = "0.3.8"
+dotenv = "0.15.0"
 maud = {version = "0.25.0", features = ["axum"] }
 serde = {version="1.0.189", features = ["derive"]}
+sqlx = { version = "0.7.2", features = ["mysql", "runtime-tokio"] }
 tokio = { version = "1.33.0", features = ["full"] }
+url = "2.4.1"
